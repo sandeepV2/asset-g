@@ -1,3 +1,17 @@
+# Curious how would page render on browser ! It could be run as docker.
+
+## Please install docker on your machine.
+
+Build frontend container with (make sure api service is up and running)
+
+### `docker buildx build --platform=linux/amd64 -t asset-g:v1 .`
+
+Run the frontend container
+
+### `docker run --publish 3000:3000 asset-g:v1`
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
