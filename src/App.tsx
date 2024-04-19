@@ -79,7 +79,9 @@ const App = () => {
           <tbody>
             {investors.map((investor) => (
               <tr key={investor.firm_id} className="bg-white dark:bg-gray-800">
-                <td className="px-6 py-4">{investor.firm_id}</td>
+                <td className="px-6 py-4" data-testid="firmId">
+                  {investor.firm_id}
+                </td>
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
