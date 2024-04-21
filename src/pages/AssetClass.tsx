@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Dropdown from "../components/Dropdown";
 import { useEffect } from "react";
 import Card from "../components/Card";
+import { baseUrl } from "../config";
 
 interface Commitment {
   id: number;
@@ -29,7 +30,7 @@ export const AssetClass = () => {
 
   useEffect(() => {
     async function fetchApi() {
-      fetch(`http://localhost:8000/api/investor/commitment/${assetClass}/${id}`)
+      fetch(`${baseUrl}/api/investor/commitment/${assetClass}/${id}`)
         .then((response) => response.json())
         .then((data) => {
           setAssets(data);
