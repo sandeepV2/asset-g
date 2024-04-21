@@ -1,5 +1,8 @@
 # Curious how would page render on browser ! It could be run as docker.
 
+However for easy access i have deployed the app using vercel. 
+https://asset-g.vercel.app/
+
 ## Please install docker on your machine.
 
 Build frontend container with (make sure api service is up and running)
